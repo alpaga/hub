@@ -34,8 +34,8 @@ public class Interact implements Listener{
 						player.sendMessage("§aMerci de ne pas spamer cette objet");
 					}else{
 						player.teleport(new Location(player.getWorld(),55,38,34));
-					}
-					useFeather.put(player.getName(), System.currentTimeMillis());
+						useFeather.put(player.getName(), System.currentTimeMillis());
+					}				
 				}else if (player.getItemInHand().equals(Spawn.getSpawn())){
 					Long lastUseBed = useBed.get(player.getName());
 					if(lastUseBed == null) lastUseBed = 0L;
@@ -45,8 +45,8 @@ public class Interact implements Listener{
 						player.sendMessage("§aMerci de ne pas spamer cette objet");
 					}else{
 						player.teleport(new Location(player.getWorld(),32,25,61));
+						useBed.put(player.getName(), System.currentTimeMillis());
 					}
-					useBed.put(player.getName(), System.currentTimeMillis());
 				}
 			}
 		event.setCancelled(true);

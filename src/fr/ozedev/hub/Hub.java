@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
@@ -37,6 +38,8 @@ public class Hub extends JavaPlugin{
 	}
 	public static void initPlayer(Player player){
 		if (get(player) == null) hubPlayer.put(player.getName(), new HubPlayer());
+		
+		player.teleport(new Location(player.getWorld(),32,25,61));
 		
 		player.sendMessage("§6----------------------------------------------------");
 		player.sendMessage("§aBienvenue §b"+player.getName().toString()+" §asur §6§kpo§r§aTerraGon§6§kpo§r§a");
