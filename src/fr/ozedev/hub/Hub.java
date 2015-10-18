@@ -42,7 +42,7 @@ public class Hub extends JavaPlugin{
 		player.teleport(new Location(player.getWorld(),32,25,61));
 		
 		player.sendMessage("§6----------------------------------------------------");
-		player.sendMessage("§aBienvenue §b"+player.getName().toString()+" §asur §6§kpo§r§aTerraGon§6§kpo§r§a");
+		player.sendMessage("§aBienvenue §b"+player.getName().toString()+" §asur §6§kpo§r§aXitron§6§kpo§r§a");
 		player.sendMessage("§6----------------------------------------------------");
 		
 		player.setGameMode(GameMode.ADVENTURE);

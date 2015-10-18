@@ -19,20 +19,6 @@ public class ItemSelec {
 		item.setItemMeta(itemM);
 		return item;
 	}
-	public static ItemStack getSurviJaune(){
-		ItemStack item = new ItemStack(Material.GOLD_BLOCK);
-		ItemMeta itemM = item.getItemMeta();
-		itemM.setDisplayName("§r§6Survie Jaune");
-		item.setItemMeta(itemM);
-		return item;
-	}
-	public static ItemStack getSurviRouge(){
-		ItemStack item = new ItemStack(Material.REDSTONE_BLOCK);
-		ItemMeta itemM = item.getItemMeta();
-		itemM.setDisplayName("§r§6Survie Rouge");
-		item.setItemMeta(itemM);
-		return item;
-	}
 	public static ItemStack getBDS(){
 		ItemStack item = new ItemStack(Material.REDSTONE);
 		ItemMeta itemM = item.getItemMeta();

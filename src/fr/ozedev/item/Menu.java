@@ -6,7 +6,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class Menu {
 	public static ItemStack getMenu(){
-		ItemStack item = new ItemStack(Material.COMPASS);
+		ItemStack item = new ItemStack(Material.BOOK_AND_QUILL);
 		ItemMeta itemM = item.getItemMeta();
 		itemM.setDisplayName("§r§6Jeux");
 		item.setItemMeta(itemM);
